@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { Link } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className='flex relative bg-slate-400 h-20'>
+        <div className='bg-green-500 text-white absolute right-20 flex h-full'>
+          <div className='flex align-middle text-xl px-5 cursor-pointer flex-col justify-center hover:bg-white hover:text-green-500 m-0'><Link to="/studentregister" >Student Login</Link></div>
+          <div className='flex align-middle text-xl px-5 cursor-pointer flex-col justify-center hover:bg-white hover:text-green-500 m-0'><Link to="/staffregister" >Staff Login</Link></div>
+          <div className='flex align-middle text-xl px-5 cursor-pointer flex-col justify-center hover:bg-white hover:text-green-500 m-0'><Link to="/admin" >Admin Login</Link></div>
+        </div>
+      </div>
     </div>
   );
 }
-
-export default App;
