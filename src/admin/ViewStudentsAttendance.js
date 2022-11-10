@@ -10,7 +10,7 @@ export default function ViewStudentAttendance(){
 
     React.useEffect(()=>{
         async function getData(){
-           const res = await fetch(`https://rfidbackendsece.herokuapp.com${endpoint}`);
+           const res = await fetch(`https://rfidbackendsece.herokuapp.com/${endpoint}`);
            const data =await res.json();
            setData(data);
            console.log(data.length);

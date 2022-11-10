@@ -9,7 +9,7 @@ export default function StudentRegister(){
         const dept = document.getElementById('dept').value;
         const roll = document.getElementById('roll').value;
         const year = document.getElementById('year').value;
-        const res = await axios.post('https://rfidbackendsece/students',{ name, dept, roll, year });
+        const res = await axios.post('https://rfidbackendsece.herokuapp.com/students',{ name, dept, roll, year });
     }
 
     return(
