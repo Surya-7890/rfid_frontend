@@ -18,7 +18,7 @@ root.render(
        <Route path="/staffregister" element={<StaffRegister />} />
        <Route path="/studentregister" element={<StudentRegister />} />
        <Route path="/admin" element={<Admin />} />
-       <Route path="/admin/getstudentsattendance" element={<ViewStudentAttendance />} />
+       <Route path="/admin/getattendance" element={<ViewStudentAttendance />} />
      </Routes>
   </BrowserRouter>
 );

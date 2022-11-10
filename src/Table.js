@@ -4,6 +4,7 @@ export default function Table({ props }){
             <div>{props.name}</div>
             <div>{props.dept}</div>
             <div>{props.status}</div>
+            <div>{props.user_id}</div>
             <div>{props.year}</div>
             <div>{props.roll}</div>
         </div>
