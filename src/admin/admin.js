@@ -6,7 +6,7 @@ export default function Admin(){
     async function handleSubmit(){
         const name = document.getElementById('name');
         const password = document.getElementById('name');
-        const res = await axios.post('https:/localhost:7000/admin',{ name, password });
+        const res = await axios.post('https://rfidbackendsece.herokuapp.com/admin',{ name, password });
         console.log(res);
     }
 
