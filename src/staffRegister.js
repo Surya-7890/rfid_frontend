@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { Navigate,useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 export default function StaffRegister(){
 

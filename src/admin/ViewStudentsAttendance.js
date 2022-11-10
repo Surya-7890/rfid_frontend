@@ -5,7 +5,6 @@ export default function ViewStudentAttendance(){
 
     const [data, setData] = React.useState([]);
     let [endpoint, setEndpoint] = React.useState("/staffs/getattendance");
-    let length = data.length;
 
 
     React.useEffect(()=>{
@@ -13,8 +12,6 @@ export default function ViewStudentAttendance(){
            const res = await fetch(`https://rfidbackendsece.herokuapp.com${endpoint}`);
            const data =await res.json();
            setData(data);
-           console.log(data.length);
-           length = data.length;
         }
         const interval = setInterval(()=>{
             getData();

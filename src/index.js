@@ -7,6 +7,7 @@ import Admin from './admin/admin';
 import ViewStudentAttendance from './admin/ViewStudentsAttendance';
 import './index.css';
 import {BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './home';
 
 
 
@@ -16,7 +17,9 @@ root.render(
     <App />
      <Routes>
        <Route path="/staffregister" element={<StaffRegister />} />
+       <Route path="/staffregister/home" element={<Home />} />
        <Route path="/studentregister" element={<StudentRegister />} />
+       <Route path="/studentregister/home" element={<Home />} />
        <Route path="/admin" element={<Admin />} />
        <Route path="/admin/getattendance" element={<ViewStudentAttendance />} />
      </Routes>
