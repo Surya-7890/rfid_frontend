@@ -1,19 +1,15 @@
 import React from "react";
 import axios from "axios";
-import {Navigate} from "react-router-dom";
 
 export default function StudentRegister(){
 
     async function handleSubmit(e){
+        
         const name = document.getElementById('name').value;
         const dept = document.getElementById('dept').value;
         const roll = document.getElementById('roll').value;
         const year = document.getElementById('year').value;
-        const res = await axios.post('https://rfidbackendsece.herokuapp.com/students',{ name, dept, roll, year });
-        console.log(res.data.message);
-        if(res.data.message === "Success"){
-          <Navigate to="/" />
-        }
+        const res = await axios.post('http://localhost:7000/students',{ name, dept, roll, year });
     }
 
     return(
