@@ -8,7 +8,7 @@ export default function StaffRegister(){
         // e.preventDefault()
         const name = document.getElementById('name').value;
         const dept = document.getElementById('dept').value;
-        const res = await axios.post('http://localhost:7000/staffs',{ name, dept });
+        const res = await axios.post('https://rfidbackendsece/staffs',{ name, dept });
         console.log(res);
         if(res.data.message === "Success"){
             return <Navigate to="/" />
