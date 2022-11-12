@@ -1,12 +1,11 @@
 export default function Table({ props }){
     return(
-        <div className='flex justify-around h-fit space-x-3'>
-            <div className='flex justify-center text-white w-full bg-green-500 mt-1'>{props.name}</div>
-            <div className='flex justify-center text-white w-full bg-green-500 mt-1'>{props.dept}</div>
-            {props.status === "IN" ? <div className='flex justify-center text-white w-full bg-green-500 mt-1'>{props.status}</div>: <div className='flex justify-center text-white w-full bg-red-500 mt-1'>{props.status}</div>}
-            <div className='flex justify-center text-white w-full bg-green-500 mt-1'>{props.user_id}</div>
-            {props.year && <div className='flex justify-center text-white w-full bg-green-500 mt-1'>{props.year}</div>}
-            {props.roll && <div className='flex justify-center text-white w-full bg-green-500 mt-1'>{props.roll}</div>}
+        <div className='flex justify-around h-fit border-b-2 text-xl bg-slate-400 hover:bg-slate-300'>
+            <div className='flex justify-center text-white w-full h-20 items-center cursor-pointer border-r-2'>{props.name}</div>
+            <div className='flex justify-center text-white w-full items-center cursor-pointer'>{props.status}</div>
+            <div className='flex justify-center text-white w-full items-center cursor-pointer'>{props.createdAt}</div>
+            {props.roll && <div className='flex justify-center text-white w-full items-center cursor-pointer'>{props.roll}</div>}
+            
         </div>
     )
 }
