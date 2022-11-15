@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import StaffRegister from './staffRegister';
 import StudentRegister from './studentRegister';
-import Admin from './admin/admin';
-import ViewStudentAttendance from './admin/ViewStudentsAttendance';
+import Admin from './admin';
+import ViewStudentAttendance from './ViewStudentsAttendance';
 import SelectRegister from './selectregister';
+import Info from './info';
 import './index.css';
 import {BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './home';
@@ -23,6 +24,7 @@ root.render(
        <Route path="/admin" element={<Admin />} />
        <Route path="/selectregister" element={<SelectRegister />} />
        <Route path="/admin/getattendance" element={<ViewStudentAttendance />} />
+       <Route  path="/:target/getinfo/:id" element={<Info />} />
      </Routes>
   </BrowserRouter>
 );
