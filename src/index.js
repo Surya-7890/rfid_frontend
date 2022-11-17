@@ -9,11 +9,14 @@ import Info from './info';
 import './index.css';
 import {BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './home';
+import { QueryClient, QueryClientProvider } from 'react-query';
+const queryClient = new QueryClient();
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <QueryClientProvider client={queryClient}>
   <BrowserRouter>
      <Routes>
        <Route path="/home" element={<Home />} />
@@ -27,4 +30,5 @@ root.render(
        <Route  path="/:target/getinfo/:id" element={<Info />} />
      </Routes>
   </BrowserRouter>
+  </QueryClientProvider>
 );

@@ -11,7 +11,7 @@ export default function Info(){
 
     React.useEffect(()=>{
         async function getData(){
-            const res = await axios.get(`https://rfidbackendsece.herokuapp.com/${target}/getinfo/${id}`);
+            const res = await axios.get(`https://rfidbackendsece.cyclic.app/${target}/getinfo/${id}`);
             const data = await res.data;
             setData(data);
             console.log(data);
