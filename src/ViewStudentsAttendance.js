@@ -91,13 +91,16 @@ export default function ViewStudentAttendance(){
         return <h2>Loading...</h2>
     }
 
+    function adminInfo(){
+        window.location.pathname="/admininfo"
+    }
+
 
     return(
         <div>
-            {console.log(student_entry.data)}
         <div>
         <div className='flex relative h-24 bg-yellow-bg items-center'>
-            <div className='h-full flex items-center ml-24'><img src="/circle-user-regular.svg" className='h-[45%] cursor-pointer' /><div className='font-semibold text-xl ml-2 cursor-pointer'>Admin</div></div>
+            <div className='h-full flex items-center ml-24' onClick={adminInfo}><img src="/circle-user-regular.svg" className='h-[45%] cursor-pointer' /><div className='font-semibold text-xl ml-2 cursor-pointer'>Admin</div></div>
           <div className='bg-blue-bg text-white absolute right-0 md:right-28 flex px-5 py-2 cursor-pointer' onClick={redirect}>Log Out</div>
           <div><img src="/logout.svg" className='absolute right-[58px] top-[25px] h-[45%] cursor-pointer' onClick={redirect} /></div>
         </div>

@@ -24,9 +24,8 @@ export default function StaffRegister(){
         <div className='flex relative h-24 bg-yellow-bg items-center'>
           <img src="./logo.png" className='ml-16 h-[75%]' /> 
           <div className='bg-blue-bg text-white absolute right-0 md:right-28 flex h-full'>
-            <Link to="/studentregister" className='flex justify-center items-center bg-blue-bg hover:bg-blue-800 hover:rounded-md font-semibold hover:shadow-xl'><div className='flex align-middle text-xl px-5 cursor-pointer flex-col justify-center m-0'>Student Login</div></Link>
-            <Link to="/staffregister" className='flex justify-center items-center shadow-black shadow-md rounded-md shadow-blue bg-white text-blue-bg font-semibold'><div className='flex align-middle text-xl px-5 cursor-pointer flex-col justify-center m-0 font-sembold'>Staff Login</div></Link>
-            <Link to="/admin" className='flex justify-center items-center bg-blue text-white-500 hover:bg-blue-800 hover:shadow-xl'><div className='flex align-middle text-xl font-semibold px-5 cursor-pointer flex-col justify-center m-0'>Admin Login</div></Link>
+            <Link to="/studentregister" className='flex justify-center items-center bg-blue-bg hover:bg-blue-800 hover:rounded-md font-semibold hover:shadow-xl'><div className='flex align-middle text-xl px-5 cursor-pointer flex-col justify-center m-0 w-52'>Student Register</div></Link>
+            <Link to="/staffregister" className='flex justify-center items-center shadow-black shadow-md rounded-md shadow-blue bg-white text-blue-bg font-semibold'><div className='flex align-middle text-xl px-5 cursor-pointer flex-col justify-center m-0 font-sembold w-52 pl-12'>Staff Register</div></Link>
           </div>
         </div>
         <div className='flex justify-center mt-52'>

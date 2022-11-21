@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 export default function SelectRegister(){
     return(
         <>
-        <div>
-        <div className='flex mt-10 justify-center items-center'>
-            <div className='bg-red-500 px-5 py-2 text-white text-xl rounded-l-md'>You haven't Registered yet</div>
-            <div className='bg-red-500 px-5 py-2 text-white text-xl rounded-r-md'>Please Register Yourself</div>
+        <div className='bg-ylw h-screen w-screen mt-0'>
+        <div className='pt-10 flex justify-center items-center'>
+            <div className='bg-red-500 py-2 pr-2 pl-5  text-black font-semibold text-xl rounded-l-md'>You haven't registered yet ,</div>
+            <div className='bg-red-500 py-2 text-black pr-5 font-semibold text-xl rounded-r-md'>please register yourself.</div>
         </div>
-        <div className='flex mt-60 ml-[76px] justify-center items-center space-x-20'>
+        <div className='flex mt-60 ml-[60px] justify-center items-center space-x-20'>
             <div>
                 <img src="./user-graduate-solid.svg" className='m-2 h-24' />
                 <Link to="/studentregister"><div className='h-16 shadow-xl hover:bg-green-400 hover:-translate-y-1 cursor-pointer w-24 bg-green-500 flex justify-center items-center text-white rounded-xl'>Student</div></Link>

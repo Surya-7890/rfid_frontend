@@ -5,6 +5,7 @@ import StudentRegister from './studentRegister';
 import Admin from './admin';
 import ViewStudentAttendance from './ViewStudentsAttendance';
 import SelectRegister from './selectregister';
+import AdminInfo from './adminInfo';
 import Info from './info';
 import './index.css';
 import {BrowserRouter, Routes, Route } from "react-router-dom";
@@ -28,6 +29,7 @@ root.render(
        <Route path="/selectregister" element={<SelectRegister />} />
        <Route path="/admin/getattendance" element={<ViewStudentAttendance />} />
        <Route  path="/:target/getinfo/:id" element={<Info />} />
+       <Route path="/admininfo" element={<AdminInfo />} />
      </Routes>
   </BrowserRouter>
   </QueryClientProvider>
